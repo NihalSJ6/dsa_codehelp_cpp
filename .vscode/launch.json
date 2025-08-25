@@ -1,7 +1,26 @@
 {
   "version": "0.2.0",
   "configurations": [
-    
+    {
+      "name": "C++ Debug (GDB + Input/Output)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
@@ -9,8 +28,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/workspaces/dsa_codehelp_cpp",
-      "program": "/workspaces/dsa_codehelp_cpp/build/Debug/outDebug",
+      "cwd": "/workspaces/dsa_codehelp_cpp/Arrays",
+      "program": "/workspaces/dsa_codehelp_cpp/Arrays/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

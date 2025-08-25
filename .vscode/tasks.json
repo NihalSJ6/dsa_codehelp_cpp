@@ -9,13 +9,13 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${workspaceFolder}/a.out"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "group": "build",
             "problemMatcher": [
                 "$gcc"
             ],
-            "detail": "Generated task to build active file"
+            "detail": "Task to build the active C++ file"
         },
         {
             "type": "cppbuild",
